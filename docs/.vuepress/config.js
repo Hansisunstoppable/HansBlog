@@ -1,7 +1,7 @@
 import { defaultTheme } from 'vuepress'
 
 export default {
-  base: "/Blog/",
+  base: "/HansBlog/",
   lang: 'zh-CN',
   title: 'zhanyd的博客',
   description: '欢迎来到zhanyd的博客',
