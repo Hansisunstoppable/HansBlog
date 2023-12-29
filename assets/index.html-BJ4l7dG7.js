@@ -1,0 +1,1 @@
+import{_ as n,o as t,c,a as e}from"./app-HF_OYnDh.js";const l={},o=e("ul",null,[e("li",null,"gansah"),e("li")],-1),s=[o];function _(a,r){return t(),c("div",null,s)}const d=n(l,[["render",_],["__file","index.html.vue"]]);export{d as default};
