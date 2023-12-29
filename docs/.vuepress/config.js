@@ -1,9 +1,10 @@
 import { defaultTheme } from 'vuepress'
 
 export default {
+  base: "/Blog/",
   lang: 'zh-CN',
-  title: 'zhanyd的博客',
-  description: '欢迎来到zhanyd的博客',
+  title: '方行的博客',
+  description: '欢迎来到方行的博客',
   theme: defaultTheme({
     // 在这里进行配置
     navbar: [
@@ -13,17 +14,40 @@ export default {
         link: '/',
       },
       {
-        text: '网络',
+        text: '算法',
+        link: '/Algorithm/',
+      },
+      {
+        text: '数据结构',
+        link: '/DataStructure/',
+      },
+      {
+        text: '计算机网络',
         link: '/network/',
       },
       {
-        text: '设计模式',
-        link: '/designPatterns/',
+        text: '操作系统',
+        link: '/OperatingSystem/',
       },
     ],
     // 侧边栏对象
     // 不同子路径下的页面会使用不同的侧边栏
     sidebar: {
+      '/Algorithm/': [
+        {
+          text: '算法',
+          children: [
+              {
+                text: '第 46 届 ICPC 国际大学生程序设计竞赛亚洲区域赛（上海）--- I-Steadily Growing Steam（背包dp）',
+                link: '/network/第 46 届 ICPC 国际大学生程序设计竞赛亚洲区域赛（上海）--- I-Steadily Growing Steam（背包dp）.md',
+              },
+              {
+                text: '在Jekyll中创建一个新的列表页面',
+                link: '/network/在Jekyll中创建一个新的列表页面.md',
+              }
+            ],
+        },
+      ],
       '/network/': [
         {
           text: '网络',
@@ -37,18 +61,6 @@ export default {
                 link: '/network/在Jekyll中创建一个新的列表页面.md',
               }
             ],
-        },
-      ],
-      '/designPatterns/': [
-        {
-          text: '设计模式',
-          collapsible: true,
-          children: [
-              {
-                text: '单例模式--我的机器人女友',
-                link: '/designPatterns/单例模式--我的机器人女友.md',
-              }
-          ],
         },
       ],
     },    
